@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GifTastic Superheroes!</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
-<body>
-    <!-- API Key = 8QKb7YZpKeFZKZSDMxiOKbY2Ofb9J7kT -->
-    <!-- Look at OMDB assignment for clues -->
-<div class="container">
-    <h1>Welcome to Superhero Gif Party!</h1>
 
-    <!-- when new buttons made, they can be stuck in the below div -->
-    <div id="buttons-view"></div>
-    
-    <form id="hero-form">
+<body>
+
+    <div class="container">
+        <div id="intro">
+            <h1>Welcome to Superhero Gif Party!</h1>
+        </div>
+        <!-- when new buttons made, they can be stuck in the below div -->
+        <div id="buttons-view"></div>
+
+        <form id="hero-form">
             <label for="hero-input">Type the superhero you want to invite to our gif party: </label>
             <input type="text" id="hero-input">
             <br>
-      
+
             <!-- button to trigger generation of new button -->
             <input id="add-hero" type="submit" value="MORE SUPERHEROES!">
-          </form>
-      
-          <!-- div to put in new gifs-->
-          <div id="hero-view"></div>
-      
-    
+        </form>
+
+        <!-- div to put in new gifs-->
+        <div id="hero-view"></div>
+
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
 </body>
+
 </html>
